@@ -1,0 +1,294 @@
+h1 {
+    font-size: 30px;
+    color: #004a8f;
+}
+
+h2 {
+    font-size: 25px;
+    color: #004a8f;
+}
+
+p {
+    font-size: 10px;
+    color: #000000;
+}
+
+a {
+    font-size: 10px;
+    color: #00aeff;
+    text-decoration: none;
+}
+
+body{
+    background-color: #e6f0ff;
+}
+
+a:hover {
+    color: #004a8f;
+}
+
+section {
+    border-radius: 6px;
+}
+
+footer {
+    background-color: #e6f0ff;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+footer a {
+    color: #004cff;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+.navegationBar {
+    bottom: 0;
+    background-color: rgba(0, 74, 143, 0.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1vw;
+    height: 5vh;
+}
+
+.navegationBar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5vw 1vw;
+}
+
+.navegationBar a:hover {
+    background-color: #0066cc;
+}
+
+.navegationBar img {
+    height: 100%;
+}
+
+.event {
+    width: 94%;
+    text-align: center;
+    background-color: #e6f0ff;
+}
+
+.calendar {
+    width: 94%;
+}
+
+.speakers {
+    width: 94%;
+}
+
+.speaker {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.speaker img {
+    max-width: 30%;
+    height: 100%;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+}
+
+.infoSpeaker {
+    padding: 5px;
+    width: 70%;
+    color: #000000;
+}
+
+.btn {
+    background-color: #004a8f;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0066cc;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background-color: #003366;
+    transform: scale(0.98);
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #004a8f;
+    box-shadow: 0 0 5px rgba(0, 74, 143, 0.5);
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+/* Tablet: 768px a 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p, a {
+        font-size: 12px;
+    }
+
+    .navegationBar {
+        padding: 0 2vw;
+        height: 6vh;
+    }
+
+    .event, .calendar, .speakers {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .speaker {
+        flex-direction: row;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .speaker img {
+        max-width: 25%;
+        height: auto;
+    }
+
+    .infoSpeaker {
+        width: 70%;
+    }
+
+    .form-input {
+        font-size: 15px;
+        padding: 12px 14px;
+    }
+
+    .btn {
+        font-size: 17px;
+        padding: 12px 24px;
+    }
+
+    footer {
+        font-size: 15px;
+        padding: 25px 15px;
+    }
+    .doubleColumn{
+        display: flex;
+    }
+
+    .calendar{
+        width: 50%;
+    }
+
+    .speakers{
+        width: 50%;
+    }
+}
+
+/* Desktop: 1025px en adelante */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    p, a {
+        font-size: 20px;
+    }
+
+    .navegationBar {
+        padding: 0 3vw;
+        height: 7vh;
+    }
+
+    .event, .calendar, .speakers {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .speakers {
+        flex-direction: row;
+        width: 100%;
+        margin: 15px auto;
+        display: flex;
+        
+    }
+
+    .speaker {
+        flex-direction: row;
+        width: 100%;
+        margin: 15px;
+
+    }
+
+    .speaker img {
+        max-width: 20%;
+        height: auto;
+    }
+
+    .infoSpeaker {
+        width: 75%;
+    }
+
+    .form-input {
+        font-size: 16px;
+        padding: 14px 16px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 14px 28px;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 30px 20px;
+    }
+}
